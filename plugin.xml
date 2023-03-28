@@ -2,7 +2,7 @@
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
         xmlns:android="http://schemas.android.com/apk/res/android"
         id="cordova-plugin-fbsdk"
-        version="4.0.2">
+        version="4.0.3">
 
     <name>Facebook Connect</name>
 
@@ -227,7 +227,7 @@
             <access origin="https://*.fbcdn.net" />
             <access origin="https://*.akamaihd.net" />
         </config-file>
-        
+
         <hook type="after_prepare" src="scripts/browser/after_prepare.js" />
     </platform>
 </plugin>
