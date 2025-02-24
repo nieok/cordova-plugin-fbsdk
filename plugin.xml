@@ -197,7 +197,7 @@
         <podspec>
             <config>
                 <source url="https://cdn.cocoapods.org/"/>
-                <deployment target="14.0" />
+                <deployment target="16.0" />
             </config>
             <pods use-frameworks="true">
                 <pod name="FBSDKCoreKit" spec="$FACEBOOK_IOS_SDK_VERSION"/>
