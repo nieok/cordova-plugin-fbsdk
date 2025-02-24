@@ -95,6 +95,7 @@
 
     <!-- ios -->
     <platform name="ios">
+    <preference name="deployment-target" value="13.0" />
         <js-module src="www/facebook-native.js" name="FacebookConnectPlugin">
             <clobbers target="facebookConnectPlugin" />
         </js-module>
@@ -219,7 +220,6 @@
                 <param name="browser-package" value="FacebookConnectPluginBrowser"/>
                 <param name="onload" value="true" />
             </feature>
-                <preference name="deployment-target" value="13.0" />
             <plugin name="FacebookConnectPlugin" value="FacebookConnectPlugin"/>
             <access origin="https://m.facebook.com" />
             <access origin="https://connect.facebook.net" />
