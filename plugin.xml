@@ -95,7 +95,11 @@
 
     <!-- ios -->
     <platform name="ios">
-    <preference name="deployment-target" value="13.0" />
+        <config-file target="Podfile" parent="platform :ios">
+        <edit-config file="Podfile" mode="merge">
+            <string>platform :ios, '13.0'</string>
+        </edit-config>
+    </config-file>
         <js-module src="www/facebook-native.js" name="FacebookConnectPlugin">
             <clobbers target="facebookConnectPlugin" />
         </js-module>
