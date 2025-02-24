@@ -95,11 +95,6 @@
 
     <!-- ios -->
     <platform name="ios">
-        <config-file target="Podfile" parent="platform :ios">
-        <edit-config file="Podfile" mode="merge">
-            <string>platform :ios, '13.0'</string>
-        </edit-config>
-    </config-file>
         <js-module src="www/facebook-native.js" name="FacebookConnectPlugin">
             <clobbers target="facebookConnectPlugin" />
         </js-module>
@@ -202,6 +197,7 @@
         <podspec>
             <config>
                 <source url="https://cdn.cocoapods.org/"/>
+                <deployment target="13.0" />
             </config>
             <pods use-frameworks="true">
                 <pod name="FBSDKCoreKit" spec="$FACEBOOK_IOS_SDK_VERSION"/>
